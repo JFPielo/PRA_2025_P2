@@ -12,7 +12,7 @@ int main(){
 	vector<int> c1{10,9,8,7,6,5,4,3,2,1};
 
 
-	cout << "Ingrese el número que desea buscar: ";
+        cout << "Ingrese el número que desea buscar: ";
 	int x;
 	cin >> x;
 	int res = BusquedaBinaria(x,a,0,a.size());
@@ -28,6 +28,13 @@ int main(){
 	} else {
 		cout << "Número no encontrado" << endl;
 	}
+
+        QuickSort(c,0,c.size()-1);
+	cout << "Elementos: ";
+	for (int valor : c){
+		cout << valor << " ";
+		}
+	cout << endl;
 	return 0;	
 }
 
